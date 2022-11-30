@@ -3,19 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Startpagina</title>
+    <link rel="stylesheet" href="../cms.css">
 </head>
 <body>
 <header>
-  Welkom
+    <p>dit is de header</p>
 </header>
 
-<h1>
-  Standaard tekst
-</h1>
-
-<footer>
-
-</footer>
-  Privacy verklaring
-</body>
-</html>
