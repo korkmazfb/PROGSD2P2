@@ -5,3 +5,8 @@ header{
 p{
     font-size: 30px;
 }
+.footer{
+    background: aqua;
+    height: 40px;
+
+}

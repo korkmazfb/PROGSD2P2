@@ -1,2 +1,2 @@
 <?php
-echo "werkt";
+//include "voorbeeld.php";
