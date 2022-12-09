@@ -30,6 +30,10 @@
 
 <?php
 
+    foreach (filter_list() as $id =>$filter) {
+        echo  '</br><tr><td>' . $filter . '</td><td>' . filter_id($filter) . '</td></tr>';
+        }
+
 
 
 
@@ -40,10 +44,10 @@ if (isset($_POST['submit'])) {
     $user__validate = trim(stripslashes(htmlspecialchars($user)));
     
     $email = $_POST['email'];
-    $email__validate = trim($email) . stripcslashes($email) . htmlspecialchars($email);
+    $email__validate = trim(stripslashes(htmlspecialchars($email)));
 
     $text = $_POST['text'];
-    $text__validate = trim($text) . stripcslashes($text) . htmlspecialchars($text);
+    $text__validate = trim(stripslashes(htmlspecialchars($text)));
 
 }
 else{
