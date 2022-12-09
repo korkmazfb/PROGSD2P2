@@ -21,7 +21,7 @@
         <input type="text" name="text" id="text" />
     </p>
     <p>
-        <input type="submit" value="submit" />
+        <input type="submit" name="submit" value="submit" />
     </p>
     </form>
 </body>
@@ -31,13 +31,13 @@
 <?php
 
 
-print_r($_POST);
+
 
 if (isset($_POST['submit'])) {
     echo 'niet leeg';
 
     $user = $_POST['voornaam'];
-    $user__validate = trim($user) . stripcslashes($user) . htmlspecialchars($user);
+    $user__validate = trim(stripslashes(htmlspecialchars($user)));
     
     $email = $_POST['email'];
     $email__validate = trim($email) . stripcslashes($email) . htmlspecialchars($email);
