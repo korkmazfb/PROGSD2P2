@@ -1,11 +1,9 @@
-<?php
-include "../../private/init.php";
-include "../../private/header.php";
-echo "Included";
+<?php include "../../private/init.php"; ?>
 
-include "../../private/footer.php";
-echo "Required";
+<?php include SHARED_PATH . "/header.php"; ?>
 
+<h1>
+  beheer
+</h1>
 
-
-
+<?php include SHARED_PATH . "/footer.php"; ?>

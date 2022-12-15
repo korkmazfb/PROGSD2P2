@@ -1,19 +1,12 @@
-<?php
+<?php include "../private/init.php"; ?>
+<?php include SHARED_PATH . "/header.php"; ?>
 
-//include "../private/voorbeeldinclude.php";
-//echo "Included";
+<h1>
+  Home
+  <br>
+  <a href="<?php echo url_path( '/contentbeheer/index.php/') ?> "> beheer</a>
+  <br>
+  <a href="<?php echo url_path( '/contentbeheer/blogs.php/') ?> "> blogs</a>
+</h1>
 
-//include "../private/voorbeeldrequired.php";
-//echo "Required";
-
-
-include "../private/init.php";
-include PRIVATE_PATH . "/header.php";
-//echo "Included";
-
-
-include PRIVATE_PATH . "/footer.php";
-//echo "Required";
-
-
-
+<?php include SHARED_PATH . "/footer.php"; ?>
