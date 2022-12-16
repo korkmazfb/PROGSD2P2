@@ -10,6 +10,26 @@ function lees_bestand($string){
 
 };
 
+function lees_bestand2($string){
+    $bestand = fopen( $string, 'r');
+
+    while(!feof($bestand)) {
+        $media_regel = fgets($bestand);
+        echo $media_regel, '<br>';
+    }
+
+};
+
+function lees_bestand3($string){
+    $bestand = fopen( $string, 'r');
+
+    while(!feof($bestand)) {
+        $hobby_regel = fgets($bestand);
+        echo $hobby_regel, '<br>';
+    }
+
+};
+
 $root = substr($_SERVER['SCRIPT_NAME'],
 0,
 strpos($_SERVER['SCRIPT_NAME'], '/public') + 7);

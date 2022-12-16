@@ -2,7 +2,7 @@
 <?php include SHARED_PATH . "/header.php"; ?>
 
 <h1>
-  beheer
+  blogs
 </h1>
 
     <?php
